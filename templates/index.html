@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/projects.css">
+    <link rel="stylesheet" href="/static/css/aboutme.css">
+    <link rel="stylesheet" href="/static/css/guestbook.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title> Артур Алексеев </title>
+</head>
+<body>
+<canvas class="full-screen-bg" id="universal-bg">
+</canvas>
+<div class="universal-wrapper">
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="inner-bar">
+                <!-- adaptive menu for
+                about me (photo, about, occupation),
+                projects,
+                work
+                -->
+                <a href="javascript:void(0);" id="navbar-burger" class="icon" onclick="changeNavbar()"><i
+                        class="fa fa-bars"></i></a>
+                <a class="nav-btn" href="#about-me-anchor"> Обо мне </a>
+                <a class="nav-btn" href="#projects-anchor"> Проекты </a>
+                <a class="nav-btn" href="#guestbook-anchor"> Отзывы </a>
+                <div></div>
+            </div>
+            <div class="logo">
+                <a class="home-link" href="/"> Артур Алексеев </a>
+            </div>
+        </div>
+        <div class="additional-data-container-container">
+            <div class="additional-data-container">
+                <div id="delaunay-bg-container">
+                    <canvas id="delaunay-bg"></canvas>
+                </div>
+                <div class="additional-data">
+                    <h1 class="additional-data-header"> Артур Алексеев </h1>
+                    <p class="additional-data-subheader"> Инженер разработчик, студент II курса программной инженерии
+                        СПбГУ </p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="main-content">
+        <div id="about-me-anchor">
+            <hr class="grad-hr">
+            <div class="about-me-general">
+                <h1> Обо мне </h1>
+                <p class="sub-title"> Начинающий программист</p>
+                <div class="about-me-with-photo">
+                    <div class="photo-container">
+                        <img class="photo" src="/static/img/csharpbible.jpg">
+                    </div>
+                    <div class="about-me-params">
+                        <div class="am-data-entry">
+                            <div class="am-data-entry-text">
+                                <span class="amn"> ФИО: </span> <span class="ama"> Алексеев Артур Игоревич </span>
+                            </div>
+                        </div>
+                        <div class="am-data-entry">
+                            <div class="am-data-entry-text">
+                                <span class="amn"> Возраст: </span> <span class="ama"> 18 лет </span>
+                            </div>
+                        </div>
+                        <div class="am-data-entry">
+                            <div class="am-data-entry-text">
+                                <span class="amn"> Город: </span> <span class="ama"> Петергоф, Россия </span>
+                            </div>
+                        </div>
+                        <div class="am-data-entry">
+                            <div class="am-data-entry-text">
+                                <span class="amn"> Образование: </span> <span class="ama"> II Курс ПИ СПбГУ </span>
+                            </div>
+                        </div>
+                        <div class="am-data-entry">
+                            <div class="am-data-entry-text">
+                                <span class="amn"> Телефон: </span> <span class="ama"> +7(999)233-73-02 </span>
+                            </div>
+                        </div>
+                        <div class="am-data-entry">
+                            <div class="am-data-entry-text">
+                                <span class="amn"> Почта: </span> <span class="ama"> arthur100500@gmail.com </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="grad-hr">
+
+            <p class="sub-title non-centered"> Мне очень нравится реализовывать <b>большие</b> и <b>интересные</b>
+                проекты, фанат
+                всего,
+                что имеет <b>интерфейс</b>, <b>картинку</b>, или <b>аудио</b>, а так же я очень люблю работу с <b>графикой</b>
+                с
+                <b>OpenGL</b></p>
+
+            <hr class="grad-hr">
+            <p class="sub-title non-centered"> В свободное время люблю играть в <a
+                    href="https://osu.ppy.sh/users/15764983"><b>osu!</b></a> Лучшие скоры:
+                <br>Through the Fire and Flames от DragonForce <b>400pp</b>
+                <br>Lionheart от Serenity <b>372pp</b>
+                <br>Mou Ii kai? от THE ORAL CIGARETTES <b>369pp</b>
+            </p>
+            <hr class="grad-hr">
+        </div>
+
+    </div>
+
+    <div class="thoughts-p-container-bg">
+        <div class="main-content">
+            <hr class="grad-hr-2">
+            <p class="thoughts-p"> Технологии, с которыми я работаю </p>
+            <span class="technology"> Python </span>
+            <div class="w3-light-grey stack-pb">
+                <div class="w3-grey" style="height:12px;width:93%"></div>
+            </div>
+            <span class="technology"> C# </span>
+            <div class="w3-light-grey stack-pb">
+                <div class="w3-grey" style="height:12px;width:82%"></div>
+            </div>
+            <span class="technology"> HTML+CSS </span>
+            <div class="w3-light-grey stack-pb">
+                <div class="w3-grey" style="height:12px;width:73%"></div>
+            </div>
+            <span class="technology"> JavaScript </span>
+            <div class="w3-light-grey stack-pb">
+                <div class="w3-grey" style="height:12px;width:66%"></div>
+            </div>
+            <span class="technology"> OpenGL </span>
+            <div class="w3-light-grey stack-pb">
+                <div class="w3-grey" style="height:12px;width:50%"></div>
+            </div>
+            <span class="technology"> WebGL </span>
+            <div class="w3-light-grey stack-pb">
+                <div class="w3-grey" style="height:12px;width:43%"></div>
+            </div>
+            <span class="technology"> PHP </span>
+            <div class="w3-light-grey stack-pb">
+                <div class="w3-grey" style="height:12px;width:34%"></div>
+            </div>
+            <span class="technology"> .NET MVC </span>
+            <div class="w3-light-grey stack-pb">
+                <div class="w3-grey" style="height:12px;width:30%"></div>
+            </div>
+            <span class="technology"> Flask </span>
+            <div class="w3-light-grey stack-pb">
+                <div class="w3-grey" style="height:12px;width:33%"></div>
+            </div>
+            <hr class="grad-hr-2">
+            <p class="thoughts-p"> Мне очень нравится объектно ориентированный подход к созданию приложений,
+                но и функциональное программирование я уважаю. С легкостью обучусь любой технологии или языку,
+                исключениями являются <b>C</b> и <b>C++</b></p>
+            <hr class="grad-hr-2">
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <div id="guestbook-anchor"></div>
+        <hr class="grad-hr">
+        <div class="about-me-general">
+            <h1> Гостевая книга </h1>
+            <p class="sub-title"> Оставьте здесь отзыв о моем сайте! </p>
+        </div>
+        <div class="guestbook" id="guestbook">
+            {% for post in posts %}
+
+            <div class="post">
+                {% autoescape false %}
+                <span class="post-text">{{ post.text.replace('\n', '<br>') }}</span>
+                {% endautoescape %}
+                <div class="post-info">
+                    <span class="post-author"> {{ post.author }}, </span>
+                    <span class="post-date">{{ post.date_created }}</span>
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+        <hr class="grad-hr">
+
+        <form action="{{ url_for('add_post') }}" id="guestbook-form" method="post">
+            <div class="about-me-general">
+                <h1> Оставьте ваш отзыв! </h1>
+                <p class="sub-title"> Заполните форму и нажмите отправить </p>
+            </div>
+            {{ form.csrf_token }}
+            {{ form.author(placeholder="Кто вы?") }}
+            {{ form.text(placeholder="Напишите здесь, что хотите оставить") }}
+            <input type="submit" value="Отправить"/>
+        </form>
+
+        <hr class="grad-hr">
+    </div>
+
+
+    <div class="thoughts-p-container-bg">
+        <div id="projects-anchor"></div>
+        <div class="main-content">
+            <hr class="grad-hr-2">
+            <div class="project-general">
+                <h1> Мои проекты </h1>
+                <p class="sub-title-2"> Проекты, которые я делаю или сделал </p>
+            </div>
+            <div class="projects-container">
+                <div class="project">
+                    <div class="img-holder">
+                        <img src="/static/img/projects/ladaengine.png"/>
+                    </div>
+                    <a href="https://github.com/arthur100500/LadaEngine" class="a-title">LADA ENGINE</a>
+                    <p class="sub-title-2 non-centered small-text"> Библиотека, написанная на C#, основанная на OpenTK,
+                        которая даст вам возможность писать
+                        небольшие
+                        игрушки (Дорабатывается) </p>
+                </div>
+                <div class="project">
+                    <div class="img-holder">
+                        <img src="/static/img/projects/delaunay.png"/>
+                    </div>
+                    <a href="https://github.com/arthur100500/delaunaybackground" class="a-title">DELAUNAY</a>
+                    <p class="sub-title-2 non-centered small-text"> Маленький файлик на JavaScript и WebGL, который
+                        сделает вам красивую анимацию на основе
+                        алгоритма
+                        Триангуля́ция Делоне́ </p>
+                </div>
+                <div class="project">
+                    <div class="img-holder">
+                        <img src="/static/img/projects/nodes.png"/>
+                    </div>
+                    <a href="#" class="a-title"> GLSL NODES </a>
+                    <p class="sub-title-2 non-centered small-text"> Небольшой веб сервис, позволяющий писать код GLSL
+                        методами визуального программирования
+                        (Дорабатывается)</p>
+                </div>
+                <div class="project">
+                    <div class="img-holder">
+                        <img src="/static/img/projects/squareClicker.png"/>
+                    </div>
+                    <a href="https://github.com/arthur100500/SquareClickerWeb" class="a-title"> SQUARE CLICKER </a>
+                    <p class="sub-title-2 non-centered small-text"> Игрушка написанная на JavaScript, где нужно нажимать
+                        на появляющиеся квадратики. </p>
+                </div>
+            </div>
+            <hr class="grad-hr-2">
+        </div>
+    </div>
+
+    <div class="main-content">
+        <hr class="grad-hr">
+        <div class="about-me-general">
+            <h1> Мои кошки </h1>
+            <p class="sub-title"> Если вам не понравился я, посмотрите хотя бы на них </p>
+        </div>
+        <div class="cat-grid">
+            <div class="cat-image">
+                <img src="/static/img/cats/cat1.jpg">
+            </div>
+            <div class="cat-image">
+                <img src="/static/img/cats/cat2.jpg">
+            </div>
+            <div class="cat-image">
+                <img src="/static/img/cats/cat3.jpg">
+            </div>
+            <div class="cat-grid-small">
+                <div class="cat-image">
+                    <img src="/static/img/cats/cat4.jpg">
+                </div>
+                <div class="cat-image">
+                    <img src="/static/img/cats/cat5.jpg">
+                </div>
+                <div class="cat-image">
+                    <img src="/static/img/cats/cat6.jpg">
+                </div>
+                <div class="cat-image">
+                    <img src="/static/img/cats/cat2.jpg">
+                </div>
+            </div>
+            <div class="cat-grid-small">
+                <div class="cat-image">
+                    <img src="/static/img/cats/cat7.jpg">
+                </div>
+                <div class="cat-image">
+                    <img src="/static/img/cats/cat8.jpg">
+                </div>
+                <div class="cat-image">
+                    <img src="/static/img/cats/cat9.jpg">
+                </div>
+                <div class="cat-image">
+                    <img src="/static/img/cats/cat13.jpg">
+                </div>
+            </div>
+            <div class="cat-image">
+                <img src="/static/img/cats/cat10.jpg">
+            </div>
+            <div class="cat-image">
+                <img src="/static/img/cats/cat11.jpg">
+            </div>
+            <div class="cat-image">
+                <img src="/static/img/cats/cat12.jpg">
+            </div>
+        </div>
+        <hr class="grad-hr">
+    </div>
+</div>
+
+</div>
+<meta id="bg-colors" data-clr-top="{{ colors[0] }}" data-clr-btm="{{ colors[1] }}">
+<script src="/static/js/navbar.js"></script>
+<script src="https://unpkg.com/delaunator@5.0.0/delaunator.min.js"></script>
+<script src="/static/js/backgroundParticles.js"></script>
+<script src="/static/js/backgroundanimGL.js"></script>
+<script src="/static/js/ajaxform.js"></script>
+<footer class="footer-cls">
+    <div class="main-content">
+        <div class="footer-header">
+            <center>
+                <p> Связь со мной </p>
+            </center>
+        </div>
+        <div class="footer-grid">
+            <div class="social">
+                <div class="social-text">
+                    <span> Github: </span> <a href="https://github.com/arthur100500" class="concr-social">
+                    arthur100500 </a>
+                </div>
+                <img src="/static/img/socials/github.svg" alt="Github">
+            </div>
+            <div class="social">
+                <div class="social-text">
+                    <span> Discord: </span> <span class="concr-social"> TheCatPetra#7328 </span>
+                </div>
+                <img src="/static/img/socials/discord.svg" alt="Discord">
+            </div>
+            <div class="social">
+                <div class="social-text">
+                    <span> Telegram: </span> <a href="https://t.me/thecatpetra" class="concr-social"> @thecatpetra </a>
+                </div>
+                <img src="/static/img/socials/telegram.svg" alt="Telegram">
+            </div>
+            <div class="social">
+                <div class="social-text">
+                    <span> Gmail: </span> <a href="mailto:arthur100500@gmail.com" class="concr-social">
+                    arthur100500@gmail.com </a>
+                </div>
+                <img src="/static/img/socials/gmail.svg" alt="Gmail">
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

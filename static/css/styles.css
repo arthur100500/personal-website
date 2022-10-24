@@ -1,0 +1,353 @@
+body {
+    font-size: 20px;
+    font-family: Tahoma, Verdana, sans-serif;
+    margin: 0;
+    background: #171717;
+    color: #dddddd;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    overflow: hidden;
+    background-color: #222222;
+    position: sticky;
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%; /* Full width */
+    box-shadow: 0 0 17px rgba(0, 0, 0, .85),
+    0 1px 0 rgba(255, 255, 255, .15);
+    z-index: 10;
+    height: 55px;
+}
+
+.home-link {
+    font-family: Tahoma, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 120%;
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.inner-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navbar .icon {
+    display: none;
+    color: #ffffff;
+    font-size: 140%;
+    padding: 14px 16px;
+}
+
+.nav-btn {
+    font-family: Tahoma, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 120%;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color ease-in-out 100ms;
+    z-index: 11;
+}
+
+.nav-btn:hover {
+    color: #ffaf8b;
+    transition: color ease-in-out 100ms;
+}
+
+.home-link:hover {
+    color: #ff834b;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 640px) {
+    .navbar a:not(:last-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: left;
+        display: block;
+    }
+
+    .navbar .inner-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 640px) {
+    .navbar.responsive {
+        position: relative;
+        height: 250px;
+    }
+
+    .navbar.responsive a.icon {
+
+    }
+
+    .navbar.responsive a {
+        display: block;
+        text-align: left;
+        transition: ease-in-out 100ms;
+    }
+
+    .navbar.responsive .inner-bar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        transition: ease-in-out 100ms;
+    }
+
+    .nav-btn{
+        width:100vw;
+    }
+
+    .navbar {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.main-content {
+}
+
+.additional-data-container {
+    width: 100%;
+    height: calc(100vh - 55px);
+}
+
+#delaunay-bg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+#delaunay-bg {
+    width: 100%;
+    height: 100%;
+    /*border-radius: 0 0 10px 10px;*/
+}
+
+.additional-data {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-shadow: 2px 2px #222324;
+}
+
+.additional-data-container {
+    position: relative;
+}
+
+.additional-data-header {
+    white-space: nowrap;
+    margin: 2px 10px 2px 10px;
+    color: #ffffff;
+    font-size: 500%;
+}
+
+.additional-data-subheader {
+    margin: 2px 10px 2px 10px;
+    color: #dddddd;
+    font-size: 200%;
+}
+
+.additional-data {
+    margin: 2px 10px 2px 10px;
+    /*background-color: rgba(0,0,0,.25);
+    border-radius: 30px;*/
+}
+
+.additional-data-container-container {
+}
+
+@media screen and (max-width: 600px) {
+    .additional-data-header {
+        white-space: normal;
+        font-size: 300%;
+    }
+
+    .additional-data-subheader {
+        font-size: 120%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    .additional-data-header {
+        white-space: normal;
+        font-size: 400%;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+    .additional-data-header {
+        white-space: normal;
+        font-size: 300%;
+    }
+
+    .additional-data-subheader {
+        font-size: 120%;
+    }
+}
+
+.main-content {
+    width: 1000px;
+    margin: auto;
+}
+
+.universal-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1040px) {
+    .universal-wrapper {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #delaunay-bg {
+        border-radius: 0 0 0 0;
+        height: 100%;
+    }
+
+    .main-content {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.full-screen-bg {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+
+.nav-btn {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-btn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffaf8b;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-btn:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.home-link {
+    display: inline-block;
+    position: relative;
+}
+
+.home-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffaf8b;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.home-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.footer-cls {
+    width: 100%;
+    background-color: #222222;
+    min-height: 100%;
+    margin-top: auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 10px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.social {
+    position: relative;
+    height: 51px;
+    background-color: #171717;
+    color: #aaaaaa;
+    border-radius: 10px;
+    transition: ease-in-out 150ms;
+}
+
+.social:hover {
+    color: #ffffff;
+    transform: translateY(-5px);
+    transition: ease-in-out 150ms;
+    box-shadow: 3px 5px 10px 3px rgba(0, 0, 0, 0.3)
+}
+
+.social-text {
+    position: absolute;
+    margin-left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.social img {
+    aspect-ratio: 1 / 1;
+    width: 51px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.concr-social {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
