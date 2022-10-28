@@ -60,11 +60,11 @@
     }
 
     .sub-title {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .about-me-general h1 {
-        font-size: 55px;
+        font-size: 40px;
     }
 }
 
@@ -110,6 +110,13 @@
     margin: 30px;
 }
 
+@media screen and (max-width: 700px) {
+    .thoughts-p{
+	font-size: 25px;
+    	margin: 13px;
+    }
+}
+
 .thoughts-p-container {
     width: 1000px;
     margin: auto;
@@ -135,6 +142,12 @@
     background: -webkit-linear-gradient(45deg, #3586ff, #00b225);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 700px) {
+    .technology {
+        font-size: 25px;
+    }
 }
 
 .grad-hr {

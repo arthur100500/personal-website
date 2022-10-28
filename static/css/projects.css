@@ -122,10 +122,22 @@ img {
 }
 
 @media screen and (max-width: 850px) {
-.cat-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-}
+    .cat-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sub-title-2 {
+        font-size: 20px;
+    }
+
+    .project a {
+        font-size: 30px;
+    }
+
+    .project-general h1 {
+        font-size: 40px;
+    }
 }
 
 .cat-grid-small{

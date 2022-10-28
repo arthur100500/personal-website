@@ -180,26 +180,26 @@ body {
 
 @media screen and (max-width: 600px) {
     .additional-data-header {
-        white-space: normal;
-        font-size: 300%;
+        white-space: nowrap;
+        font-size: 200%;
     }
 
     .additional-data-subheader {
-        font-size: 120%;
+        font-size: 80%;
     }
 }
 
 
 @media screen and (max-width: 1000px) and (min-width: 800px) {
     .additional-data-header {
-        white-space: normal;
+        white-space: nowrap;
         font-size: 400%;
     }
 }
 
 @media screen and (max-width: 800px) and (min-width: 600px) {
     .additional-data-header {
-        white-space: normal;
+        white-space: nowrap;
         font-size: 300%;
     }
 
@@ -247,6 +247,11 @@ body {
     z-index: -10;
 }
 
+@media screen and (max-width: 700px) {
+    .full-screen-bg {
+        display: none;
+    }
+}
 
 .nav-btn {
     display: inline-block;

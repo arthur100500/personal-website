@@ -1,5 +1,5 @@
 const pCanvas = document.querySelector("#universal-bg");
-const figurecount = 1000;
+const figurecount = 300;
 
 let whRatio = 1;
 let scaleChanged = false;
@@ -56,10 +56,10 @@ class Particle {
         let z = this.z;
         let x = this.x;
         let y = this.y + scroll * z;
-        y = ((y + 1) / 2) % 1;
+        y = ((y + 1) / 2 + 0.15) % 1.3 - 0.15;
         y = y * 2 - 1;
         let rad = this.rad * z * 5.0;
-        let rot = this.rot;
+        let rot = this.rot + scroll * (x + y + z) * 0.000;
         return [
             x + rad * Math.cos(rot), y + rad * Math.sin(rot) * whRatio,
             x + rad * Math.cos(rot + Math.PI * 2 / 3), y + rad * Math.sin(rot + Math.PI * 2 / 3) * whRatio,
