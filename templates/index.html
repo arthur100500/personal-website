@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=decive-width, initial-scale=1">
     <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" href="/static/css/projects.css">
     <link rel="stylesheet" href="/static/css/aboutme.css">
@@ -47,7 +48,10 @@
         </div>
 
     </header>
-
+    <meta id="bg-colors" data-clr-top="{{ colors[0] }}" data-clr-btm="{{ colors[1] }}">
+    <script src="https://unpkg.com/delaunator@5.0.0/delaunator.min.js"></script>
+    <script src="/static/js/backgroundParticles.js"></script>
+    <script src="/static/js/backgroundanimGL.js"></script>
     <div class="main-content">
         <div id="about-me-anchor">
             <hr class="grad-hr">
@@ -312,17 +316,13 @@
 </div>
 
 </div>
-<meta id="bg-colors" data-clr-top="{{ colors[0] }}" data-clr-btm="{{ colors[1] }}">
 <script src="/static/js/navbar.js"></script>
-<script src="https://unpkg.com/delaunator@5.0.0/delaunator.min.js"></script>
-<script src="/static/js/backgroundParticles.js"></script>
-<script src="/static/js/backgroundanimGL.js"></script>
 <script src="/static/js/ajaxform.js"></script>
 <footer class="footer-cls">
     <div class="main-content">
         <div class="footer-header">
             <center>
-                <p> Связь со мной </p>
+                <p> Связь со мной: </p>
             </center>
         </div>
         <div class="footer-grid">

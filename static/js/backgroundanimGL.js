@@ -39,7 +39,9 @@ function colToRgb(arg) {
     return "rgb(" + (arg[0] * 255) + ", " + (arg[1] * 255) + ", " + (arg[2] * 255) + ", " + arg[3] + ")";
 }
 
-canvasContainer.style.cssText += "linear-gradient(" + colToRgb(clrTop) + ", " + colToRgb(clrBtm) + ");";
+canvasContainer.style.backgroundImage += "linear-gradient(" + colToRgb(clrTop) + ", " + colToRgb(clrBtm) + ");";
+
+console.log(canvasContainer.style.cssText);
 
 const resize = () => {
     canvas.width = window.innerWidth;

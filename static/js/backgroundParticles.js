@@ -29,8 +29,8 @@ void main(){
 const pResize = () => {
     rResize();
     // Хочу небольшой блюр, хоть и не качественный
-    pCanvas.width = window.innerWidth / 4;
-    pCanvas.height = window.innerHeight / 4;
+    pCanvas.width = window.innerWidth / 1;
+    pCanvas.height = window.innerHeight / 1;
 }
 
 const rResize = () => {
@@ -58,7 +58,6 @@ class Particle {
         let y = this.y + scroll * z;
         y = ((y + 1) / 2) % 1;
         y = y * 2 - 1;
-        y *= whRatio;
         let rad = this.rad * z * 5.0;
         let rot = this.rot;
         return [
